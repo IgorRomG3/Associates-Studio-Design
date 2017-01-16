@@ -1,0 +1,17 @@
+{
+  "name": "mydsgn",
+  "description": "practice with gulp less bootstrap bower",
+  "main": "gulpfile.js",
+  "authors": [
+    "IgorRomG3"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
