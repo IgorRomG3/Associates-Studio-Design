@@ -1,0 +1,51 @@
+ul {
+  list-style: none;
+}
+header .block-head-one {
+  height: 500px;
+  background-color: #e9eae2;
+  background-image: url(../img/chairs-header.png);
+  background-repeat: no-repeat;
+  background-position: -150px 0;
+}
+header .block-head-one p {
+  margin-bottom: 61px;
+  color: #393d3c;
+  font-family: "Roboto Condensed";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+header .block-head-one .networks {
+  padding-left: 20px;
+}
+header .block-head-one .networks li {
+  margin-right: 10px;
+  display: inline-block;
+}
+header .block-head-two {
+  height: 500px;
+  position: relative;
+  background-color: #7acec3;
+}
+header .block-head-two address {
+  color: #fff;
+  font-family: "Roboto Condensed";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+header .block-head-two .place {
+  content: "";
+  position: absolute;
+  top: 52.4%;
+  left: 12%;
+}
+header .block-head-two .number {
+  content: "";
+  position: absolute;
+  bottom: 20%;
+  left: 27.2%;
+}
