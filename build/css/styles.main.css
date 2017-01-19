@@ -49,3 +49,31 @@ header .block-head-two .number {
   bottom: 20%;
   left: 27.2%;
 }
+main .block-main-one {
+  height: 500px;
+  background-color: #ebb240;
+}
+main .block-main-two {
+  height: 500px;
+  background-color: green;
+}
+main .block-main-three {
+  height: 250px;
+  background-color: #dfe0d9;
+}
+main .block-main-four {
+  height: 465px;
+  background-color: red;
+}
+main .block-main-five {
+  height: 465px;
+  background-color: #7a848f;
+}
+main .block-main-six {
+  height: 465px;
+  background-color: #eaeaea;
+}
+main .block-main-seven {
+  height: 251px;
+  background-color: blue;
+}
