@@ -49,31 +49,224 @@ header .block-head-two .number {
   bottom: 20%;
   left: 27.2%;
 }
-main .block-main-one {
+main ul.project-nav {
+  margin: 34.6% 0 0 35.3px;
+  position: relative;
+}
+main ul.project-nav:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 3%;
+  width: 19px;
+  height: 15px;
+  background-image: url(../img/arrow-icon-white.png);
+}
+main ul.project-nav a {
+  font-family: "Roboto Condensed";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #fff;
+}
+main ul.project-nav .active a {
+  color: #000;
+}
+main h4 {
+  color: #333;
+  font-family: "Roboto Condensed";
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+main .part-one {
+  float: left;
+}
+main .part-two {
+  float: right;
+}
+main .description {
+  color: #333;
+  font-family: "Roboto Condensed";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+}
+main .description span {
+  font-weight: bold;
+}
+main .view {
+  display: inline-block;
+  position: relative;
+  color: #333;
+  font-family: "Roboto Condensed";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+main .view:before {
+  content: '';
+  position: absolute;
+  top: -25%;
+  left: -20%;
+  width: 19px;
+  height: 15px;
+  background-image: url(../img/arrow-yellow-pic.png);
+}
+main section h2 {
+  margin: 20.6% 0 0 30%;
+  color: #fefefe;
+  font-family: "Roboto Condensed";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+main section .block-main-one {
   height: 500px;
   background-color: #ebb240;
 }
-main .block-main-two {
+main section .block-main-two {
   height: 500px;
-  background-color: green;
+  background-color: #ffffff;
+  background-image: url(../img/section-pic-one.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
 }
-main .block-main-three {
-  height: 250px;
-  background-color: #dfe0d9;
+main section .block-main-two .about-project {
+  margin: 15.4% 0 0 5.7%;
 }
-main .block-main-four {
+main section .block-main-two .about-project .view {
+  margin: 76px 0 0 36px;
+}
+main section .block-main-two .about-project .like {
+  margin: 20% 0 0 17%;
+}
+main section .block-main-three {
   height: 465px;
-  background-color: red;
+  background-color: #70818e;
+  background-image: url(../img/section-pic-two.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
-main .block-main-five {
-  height: 465px;
-  background-color: #7a848f;
+main section .block-main-three .about-project {
+  margin-top: 9%;
 }
-main .block-main-six {
+main section .block-main-three .about-project .view {
+  margin: 38px 0 20px 28px;
+}
+main section .block-main-three .about-project .like {
+  text-align: center;
+}
+main section .block-main-four {
   height: 465px;
   background-color: #eaeaea;
+  background-image: url(../img/section-pic-three.png);
+  background-repeat: no-repeat;
 }
-main .block-main-seven {
+main section .block-main-four .about-project .part-one {
+  margin: 10% 0 0 42%;
+}
+main section .block-main-four .about-project .part-two {
+  margin: 11% 0 0 15%;
+}
+main section .block-main-four .about-project .part-two .like {
+  margin: 20px 0 0 40px;
+}
+main section .block-main-five {
+  position: relative;
+  height: 300px;
+  background-color: #fff;
+  background-image: url('../img/section-pic-four.png');
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+}
+main section .block-main-five .about-project {
+  width: 90%;
+  position: absolute;
+  bottom: 0;
+}
+main section .block-main-six {
+  position: relative;
+  height: 300px;
+  background-color: #fff;
+  background-image: url('../img/section-pic-five.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main section .block-main-six .about-project {
+  display: inline-block;
+  position: absolute;
+  top: 30%;
+  right: 0;
+}
+main aside .block-aside-one {
+  height: 250px;
+  background-color: #dfe0d9;
+  background-image: url(../img/aside-pic-one.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+main aside .block-aside-one .about-project h5 {
+  color: #333;
+  font-family: "Roboto Condensed";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+main aside .block-aside-one .about-project h5 span {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+main aside .block-aside-one .about-project .description {
+  width: 149px;
+  height: 60px;
+}
+main aside .block-aside-two {
+  position: relative;
+  height: 465px;
+  background-color: #e9eae2;
+  background-image: url(../img/aside-pic-two.png);
+  background-size: cover;
+}
+main aside .block-aside-two .about-project {
+  width: 90%;
+  position: absolute;
+  bottom: 5%;
+}
+main aside .block-aside-two .about-project .part-two {
+  margin-top: 30px;
+}
+main aside .block-aside-three {
+  position: relative;
   height: 251px;
-  background-color: blue;
+  background-color: #ffffff;
+  background-image: url(../img/aside-pic-three.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+main aside .block-aside-three .about-project {
+  margin-top: 35px;
+  width: 35%;
+  position: absolute;
+  right: 10%;
+}
+main aside .block-aside-three .view,
+main aside .block-aside-three .like {
+  margin-left: 20px;
+}
+main aside .block-aside-four {
+  height: 300px;
+  background-color: #ebb240;
+}
+main aside .block-aside-four ul.project-nav {
+  margin: 10% 0 0 10%;
+}
+main aside .block-aside-four ul.project-nav:before {
+  top: 18%;
 }
