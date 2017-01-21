@@ -264,7 +264,7 @@ main aside .block-aside-two .about-project .part-two {
 }
 main aside .block-aside-three {
   position: relative;
-  height: 251px;
+  height: 250px;
   background-color: #ffffff;
   background-image: url(../img/aside-pic-three.png);
   background-repeat: no-repeat;
@@ -292,4 +292,11 @@ main aside .block-aside-four ul.project-nav {
 }
 main aside .block-aside-four ul.project-nav:before {
   top: 18%;
+}
+main .studio {
+  background-color: #e9eae2;
+}
+main .studio .head {
+  height: 500px;
+  background-color: #ff9b6d;
 }
