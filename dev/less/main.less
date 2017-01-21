@@ -76,9 +76,13 @@ main {
   .like {
     text-align: center;
   }
-  div.projects {
+  .head {
+    height: 500px;
     h2 {
-      margin: 20.6% 0 0 30%;
+      position: absolute;
+      bottom: 34%;
+      right: 24%;
+
       color: #fefefe;
       font-family: "Roboto Condensed";
       font-size: 48px;
@@ -86,8 +90,9 @@ main {
       line-height: 14px;
       text-transform: uppercase;
     }
+  }
+  section.projects {
     .head {
-      height: 500px;
       background-color: #ebb240;
     }
     .block-main-two {
@@ -254,10 +259,9 @@ main {
       }
     }
   }
-  div.studio {
+  section.studio {
     background-color: #e9eae2;
     .head {
-      height: 500px;
       position: relative;
       background-color: #ff9b6d;
       h2 {
@@ -320,8 +324,8 @@ main {
       }
     }
     .stuff {
-      margin-right: -5%;
-      padding-top: 9%;
+      margin: 9% 0;
+      padding-left: 5%;
 
       color: #333;
       font-family: "Roboto Condensed";
@@ -336,32 +340,73 @@ main {
         font-weight: 400;
       }
       .cv {
+        margin-top: 2px;
         display: inline-block;
         width: 41px;
         height: 15px;
         background-image: url(../img/sprite/sprite.png);
       }
       .networks {
-        .fb {
+        float: right;
+        height: 14px;
+        li {
+          margin-left: 10px;
+          display: inline-block;
           a {
             display: inline-block;
             width: 14px;
             height: 13px;
             background-image: url(../img/sprite/sprite.png);
+            background-repeat: no-repeat;
           }
-          // .fb {
-          //   background-position;
-          // }
-          // .twit {
-          //   background-position:
-          // }
-          // .in {
-          //   background-position:
-          // }
-          // .google {
-          //   background-position:
-          // }
+          .fb {
+            background-position: -54px -21px;
+          }
+          .twit {
+            background-position: -32px -35px;
+          }
+          .in {
+            background-position: -18px -37px;
+          }
+          .google {
+            width: 17px;
+            background-position: -37px -21px;
+          }
         }
+      }
+    }
+  }
+  section.news {
+    .head {
+      background-color: #d4edbf;
+    }
+    .last-news {
+      padding: 16% 0;
+      h3 {
+        color: #333;
+        font-family: "Roboto Condensed";
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+        text-transform: uppercase;
+      }
+      p {
+        margin-top: 22px;
+        color: #6a6969;
+        font-family: "Roboto Condensed";
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+      }
+      a {
+        float: right;
+        margin-right: 5%;
+        color: #fd5000;
+        font-family: "Roboto Condensed";
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        text-transform: uppercase;
       }
     }
   }
