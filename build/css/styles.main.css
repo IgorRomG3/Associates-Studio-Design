@@ -1,6 +1,9 @@
 ul {
   list-style: none;
 }
+body {
+  background-color: #e9eae2;
+}
 header .block-head-one {
   height: 500px;
   background-color: #e9eae2;
@@ -120,7 +123,7 @@ main .view:before {
 main .like {
   text-align: center;
 }
-main section h2 {
+main div.projects h2 {
   margin: 20.6% 0 0 30%;
   color: #fefefe;
   font-family: "Roboto Condensed";
@@ -129,11 +132,11 @@ main section h2 {
   line-height: 14px;
   text-transform: uppercase;
 }
-main section .block-main-one {
+main div.projects .head {
   height: 500px;
   background-color: #ebb240;
 }
-main section .block-main-two {
+main div.projects .block-main-two {
   height: 500px;
   position: relative;
   background-color: #ffffff;
@@ -142,76 +145,76 @@ main section .block-main-two {
   background-position: right;
   background-size: contain;
 }
-main section .block-main-two .about-project {
+main div.projects .block-main-two .about-project {
   margin: 15.4% 0 0 5.7%;
 }
-main section .block-main-two .about-project .view {
+main div.projects .block-main-two .about-project .view {
   margin: 76px 0 0 36px;
 }
-main section .block-main-two .about-project .like {
+main div.projects .block-main-two .about-project .like {
   text-align: inherit;
   margin: 20% 0 0 17%;
 }
-main section .block-main-three {
+main div.projects .block-main-three {
   height: 465px;
   background-color: #70818e;
   background-image: url(../img/section-pic-two.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-main section .block-main-three .about-project {
+main div.projects .block-main-three .about-project {
   margin-top: 9%;
 }
-main section .block-main-three .about-project .view {
+main div.projects .block-main-three .about-project .view {
   margin: 38px 0 20px 28px;
 }
-main section .block-main-three .about-project .like {
+main div.projects .block-main-three .about-project .like {
   text-align: center;
 }
-main section .block-main-four {
+main div.projects .block-main-four {
   position: relative;
   height: 465px;
   background-color: #eaeaea;
   background-image: url(../img/section-pic-three.png);
   background-repeat: no-repeat;
 }
-main section .block-main-four .about-project {
+main div.projects .block-main-four .about-project {
   width: 55%;
   position: absolute;
   right: 5%;
   top: 15%;
 }
-main section .block-main-four .like {
+main div.projects .block-main-four .like {
   margin-top: 20px;
   text-align: center;
 }
-main section .block-main-five {
+main div.projects .block-main-five {
   height: 300px;
   background-color: #fff;
   background-image: url('../img/section-pic-four.png');
   background-repeat: no-repeat;
   background-position: 50% 30%;
 }
-main section .block-main-five .about-project {
+main div.projects .block-main-five .about-project {
   width: 90%;
   position: absolute;
   bottom: 0;
 }
-main section .block-main-six {
+main div.projects .block-main-six {
   height: 300px;
   background-color: #fff;
   background-image: url('../img/section-pic-five.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
-main section .block-main-six .about-project {
+main div.projects .block-main-six .about-project {
   margin: 30% 0 0 50%;
 }
-main section .block-main-six .about-project h4,
-main section .block-main-six .about-project p {
+main div.projects .block-main-six .about-project h4,
+main div.projects .block-main-six .about-project p {
   margin-left: 15%;
 }
-main section .block-main-six .about-project .view {
+main div.projects .block-main-six .about-project .view {
   margin-top: 20%;
 }
 main aside .block-aside-one {
@@ -293,10 +296,96 @@ main aside .block-aside-four ul.project-nav {
 main aside .block-aside-four ul.project-nav:before {
   top: 18%;
 }
-main .studio {
+main div.studio {
   background-color: #e9eae2;
 }
-main .studio .head {
+main div.studio .head {
   height: 500px;
+  position: relative;
   background-color: #ff9b6d;
+}
+main div.studio .head h2 {
+  position: absolute;
+  bottom: 34%;
+  right: 24%;
+  color: #fefefe;
+  font-family: "Roboto Condensed";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+main div.studio .about-studio {
+  height: 500px;
+  padding-top: 19%;
+  color: #333;
+  font-family: "Roboto Condensed";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+main div.studio .about-studio .about-bold {
+  font-style: italic;
+  font-weight: 600;
+  line-height: 18px;
+}
+main div.studio .about-awards {
+  height: 500px;
+  padding-top: 19%;
+}
+main div.studio .about-awards h5 {
+  margin: 9% 0 6% 0;
+  width: 90%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+  color: #333;
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+main div.studio .about-awards p {
+  width: 40%;
+  color: #333;
+  font-family: "Roboto Condensed";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+main div.studio .about-awards .left {
+  float: left;
+}
+main div.studio .about-awards .right {
+  margin-right: 5%;
+  float: right;
+}
+main div.studio .stuff {
+  margin-right: -5%;
+  padding-top: 9%;
+  color: #333;
+  font-family: "Roboto Condensed";
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+main div.studio .stuff h5 {
+  font-weight: 700;
+}
+main div.studio .stuff p {
+  font-size: 12px;
+  font-weight: 400;
+}
+main div.studio .stuff .cv {
+  display: inline-block;
+  width: 41px;
+  height: 15px;
+  background-image: url(../img/sprite/sprite.png);
+}
+main div.studio .stuff .networks .fb a {
+  display: inline-block;
+  width: 14px;
+  height: 13px;
+  background-image: url(../img/sprite/sprite.png);
 }
