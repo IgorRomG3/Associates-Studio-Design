@@ -27,7 +27,8 @@ main {
       }
     }
   }
-  h4 {;
+  h4 {
+    margin-top: 3px;
     color: #333;
     font-family: "Roboto Condensed";
     font-size: 24px;
@@ -72,6 +73,9 @@ main {
       background-image: url(../img/arrow-yellow-pic.png);
     }
   }
+  .like {
+    text-align: center;
+  }
   section {
     h2 {
       margin: 20.6% 0 0 30%;
@@ -88,6 +92,7 @@ main {
     }
     .block-main-two {
       height: 500px;
+      position: relative;
       background-color: #ffffff;
       background-image: url(../img/section-pic-one.png);
       background-repeat: no-repeat;
@@ -99,6 +104,7 @@ main {
           margin: 76px 0 0 36px;
         }
         .like {
+          text-align: inherit;
           margin: 20% 0 0 17%;
         }
       }
@@ -120,24 +126,23 @@ main {
       }
     }
     .block-main-four {
+      position: relative;
       height: 465px;
       background-color: #eaeaea;
       background-image: url(../img/section-pic-three.png);
       background-repeat: no-repeat;
       .about-project {
-        .part-one {
-          margin: 10% 0 0 42%;
-        }
-        .part-two {
-          .like {
-            margin: 20px 0 0 40px;
-          }
-          margin: 11% 0 0 15%;
-        }
+        width: 55%;
+        position: absolute;
+        right: 5%;
+        top: 15%;
+      }
+      .like {
+        margin-top: 20px;
+        text-align: center;
       }
     }
     .block-main-five {
-      position: relative;
       height: 300px;
       background-color: #fff;
       background-image: url('../img/section-pic-four.png');
@@ -150,28 +155,35 @@ main {
       }
     }
     .block-main-six {
-      position: relative;
       height: 300px;
       background-color: #fff;
       background-image: url('../img/section-pic-five.png');
       background-repeat: no-repeat;
       background-size: cover;
       .about-project {
-        display: inline-block;
-        position: absolute;
-        top: 30%;
-        right: 0;
+        margin: 30% 0 0 50%;
+        h4,
+        p {
+          margin-left: 15%;
+        }
+        .view {
+          margin-top: 20%;
+        }
       }
     }
   }
   aside {
     .block-aside-one {
       height: 250px;
+      position: relative;
       background-color: #dfe0d9;
       background-image: url(../img/aside-pic-one.png);
       background-repeat: no-repeat;
       background-position: right;
       .about-project {
+        width: 40%;
+        position: absolute;
+        top: 15%;
         h5 {
           color: #333;
           font-family: "Roboto Condensed";
@@ -185,8 +197,12 @@ main {
           }
         }
         .description {
+          margin-bottom: 10%;
           width: 149px;
           height: 60px;
+        }
+        .view{
+          margin: 0 0 10% 10%;
         }
       }
     }
@@ -219,7 +235,11 @@ main {
         position: absolute;
         right: 10%;
       }
-      .view,.like {
+      .description {
+        margin: 20% 0;
+      }
+      .view,
+      .like {
         margin-left: 20px;
       }
     }

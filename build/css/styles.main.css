@@ -74,6 +74,7 @@ main ul.project-nav .active a {
   color: #000;
 }
 main h4 {
+  margin-top: 3px;
   color: #333;
   font-family: "Roboto Condensed";
   font-size: 24px;
@@ -116,6 +117,9 @@ main .view:before {
   height: 15px;
   background-image: url(../img/arrow-yellow-pic.png);
 }
+main .like {
+  text-align: center;
+}
 main section h2 {
   margin: 20.6% 0 0 30%;
   color: #fefefe;
@@ -131,6 +135,7 @@ main section .block-main-one {
 }
 main section .block-main-two {
   height: 500px;
+  position: relative;
   background-color: #ffffff;
   background-image: url(../img/section-pic-one.png);
   background-repeat: no-repeat;
@@ -144,6 +149,7 @@ main section .block-main-two .about-project .view {
   margin: 76px 0 0 36px;
 }
 main section .block-main-two .about-project .like {
+  text-align: inherit;
   margin: 20% 0 0 17%;
 }
 main section .block-main-three {
@@ -163,22 +169,23 @@ main section .block-main-three .about-project .like {
   text-align: center;
 }
 main section .block-main-four {
+  position: relative;
   height: 465px;
   background-color: #eaeaea;
   background-image: url(../img/section-pic-three.png);
   background-repeat: no-repeat;
 }
-main section .block-main-four .about-project .part-one {
-  margin: 10% 0 0 42%;
+main section .block-main-four .about-project {
+  width: 55%;
+  position: absolute;
+  right: 5%;
+  top: 15%;
 }
-main section .block-main-four .about-project .part-two {
-  margin: 11% 0 0 15%;
-}
-main section .block-main-four .about-project .part-two .like {
-  margin: 20px 0 0 40px;
+main section .block-main-four .like {
+  margin-top: 20px;
+  text-align: center;
 }
 main section .block-main-five {
-  position: relative;
   height: 300px;
   background-color: #fff;
   background-image: url('../img/section-pic-four.png');
@@ -191,7 +198,6 @@ main section .block-main-five .about-project {
   bottom: 0;
 }
 main section .block-main-six {
-  position: relative;
   height: 300px;
   background-color: #fff;
   background-image: url('../img/section-pic-five.png');
@@ -199,17 +205,27 @@ main section .block-main-six {
   background-size: cover;
 }
 main section .block-main-six .about-project {
-  display: inline-block;
-  position: absolute;
-  top: 30%;
-  right: 0;
+  margin: 30% 0 0 50%;
+}
+main section .block-main-six .about-project h4,
+main section .block-main-six .about-project p {
+  margin-left: 15%;
+}
+main section .block-main-six .about-project .view {
+  margin-top: 20%;
 }
 main aside .block-aside-one {
   height: 250px;
+  position: relative;
   background-color: #dfe0d9;
   background-image: url(../img/aside-pic-one.png);
   background-repeat: no-repeat;
   background-position: right;
+}
+main aside .block-aside-one .about-project {
+  width: 40%;
+  position: absolute;
+  top: 15%;
 }
 main aside .block-aside-one .about-project h5 {
   color: #333;
@@ -224,8 +240,12 @@ main aside .block-aside-one .about-project h5 span {
   text-transform: uppercase;
 }
 main aside .block-aside-one .about-project .description {
+  margin-bottom: 10%;
   width: 149px;
   height: 60px;
+}
+main aside .block-aside-one .about-project .view {
+  margin: 0 0 10% 10%;
 }
 main aside .block-aside-two {
   position: relative;
@@ -255,6 +275,9 @@ main aside .block-aside-three .about-project {
   width: 35%;
   position: absolute;
   right: 10%;
+}
+main aside .block-aside-three .description {
+  margin: 20% 0;
 }
 main aside .block-aside-three .view,
 main aside .block-aside-three .like {
