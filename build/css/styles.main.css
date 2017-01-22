@@ -420,6 +420,7 @@ main section.news .head {
 }
 main section.news .last-news {
   padding: 16% 0;
+  height: 500px;
 }
 main section.news .last-news h3 {
   color: #333;
@@ -446,4 +447,51 @@ main section.news .last-news a {
   font-weight: 400;
   line-height: 14px;
   text-transform: uppercase;
+}
+footer .footer-info {
+  height: 644px;
+  position: relative;
+}
+footer .footer-info .contacts,
+footer .footer-info .logo,
+footer .footer-info .copyright {
+  position: absolute;
+}
+footer .footer-info .contacts {
+  position: absolute;
+  top: 32%;
+  left: 10%;
+}
+footer .footer-info .contacts address {
+  color: #333;
+  font-family: "Roboto Condensed";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+footer .footer-info .logo {
+  position: absolute;
+  top: 30%;
+  right: 5%;
+}
+footer .footer-info .logo p {
+  color: #393d3c;
+  font-family: "Roboto Condensed";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+footer .footer-info .logo .networks li {
+  margin-right: 10px;
+  display: inline-block;
+}
+footer .footer-info .copyright {
+  bottom: 0;
+  left: 15%;
+  color: #191919;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
 }
