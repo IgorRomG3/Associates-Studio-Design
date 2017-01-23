@@ -1,32 +1,4 @@
 main {
-  ul.project-nav {
-    margin: 34.6% 0 0 35.3px;
-    position: relative;
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 3%;
-
-      width: 19px;
-      height: 15px;
-
-      background-image: url(../img/arrow-icon-white.png);
-    }
-    a {
-      font-family: "Roboto Condensed";
-      font-size: 13px;
-      font-weight: 400;
-      line-height: 14px;
-      text-transform: uppercase;
-      color: #fff;
-    }
-    .active {
-      a {
-        color: #000;
-      }
-    }
-  }
   h4 {
     margin-top: 3px;
     color: #333;
@@ -78,6 +50,7 @@ main {
   }
   .head {
     height: 500px;
+    background-color: @orange;
     h2 {
       position: absolute;
       bottom: 34%;
@@ -90,11 +63,37 @@ main {
       line-height: 14px;
       text-transform: uppercase;
     }
+    ul.project-nav {
+      position: absolute;
+      top: 30%;
+      left: 10%;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 3%;
+
+        width: 19px;
+        height: 15px;
+
+        background-image: url(../img/arrow-icon-white.png);
+      }
+      a {
+        font-family: "Roboto Condensed";
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 14px;
+        text-transform: uppercase;
+        color: #fff;
+      }
+      .active {
+        a {
+          color: #000;
+        }
+      }
+    }
   }
   section.projects {
-    .head {
-      background-color: #ebb240;
-    }
     .block-main-two {
       height: 500px;
       position: relative;
@@ -104,29 +103,32 @@ main {
       background-position: right;
       background-size:  contain;
       .about-project {
-        margin: 15.4% 0 0 5.7%;
+        position: absolute;
+        top: 20%;
+        left: 5%;
         .view {
-          margin: 76px 0 0 36px;
+          margin: 40% 0 40% 25%;
         }
         .like {
-          text-align: inherit;
-          margin: 20% 0 0 17%;
+          text-align: center;
         }
       }
     }
     .block-main-three {
       height: 465px;
+      position: relative;
       background-color: #70818e;
       background-image: url(../img/section-pic-two.png);
       background-repeat: no-repeat;
-      background-size:  100% 100%;
+      background-size: 100% 100%;
       .about-project {
-        margin-top: 9%;
-        .view {
-          margin: 38px 0 20px 28px;
-        }
-        .like {
-          text-align: center;
+        position: absolute;
+        top: 10%;
+        .part-two {
+          margin-top: 15%;
+          .like {
+            text-align: center;
+          }
         }
       }
     }
@@ -161,18 +163,21 @@ main {
     }
     .block-main-six {
       height: 300px;
+      position: relative;
       background-color: #fff;
       background-image: url('../img/section-pic-five.png');
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
       .about-project {
-        margin: 30% 0 0 50%;
-        h4,
-        p {
-          margin-left: 15%;
+        width: 60%;
+        position: absolute;
+        top: 10%;
+        right: 2%;
+        .part-one {
+          float: right;
         }
-        .view {
-          margin-top: 20%;
+        .part-two {
+          margin: 30% 25% 0 0;
         }
       }
     }
@@ -248,11 +253,10 @@ main {
         margin-left: 20px;
       }
     }
-    .block-aside-four {
+    // style .head at the begining of main
+    .head {
       height: 300px;
-      background-color: @orange;
       ul.project-nav {
-        margin: 10% 0 0 10%;
         &:before {
           top: 18%;
         }
@@ -392,6 +396,7 @@ main {
         text-transform: uppercase;
       }
       p {
+        width: 95%;
         margin-top: 22px;
         color: #6a6969;
         font-family: "Roboto Condensed";
@@ -408,6 +413,9 @@ main {
         font-weight: 400;
         line-height: 14px;
         text-transform: uppercase;
+      }
+      img {
+        margin: 0;
       }
     }
   }
