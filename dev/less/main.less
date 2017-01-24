@@ -124,6 +124,9 @@ main {
       .about-project {
         position: absolute;
         top: 10%;
+        @media (max-width: 970px) {
+          left: 40%;
+        }
         .part-two {
           margin-top: 15%;
           .like {
@@ -138,6 +141,11 @@ main {
       background-color: #eaeaea;
       background-image: url(../img/section-pic-three.png);
       background-repeat: no-repeat;
+      background-size: cover;
+      @media (max-width: 1170px) {
+        // media for background image won't climbed out of the block
+        background-position: 20% 0;
+      }
       .about-project {
         width: 55%;
         position: absolute;
@@ -164,7 +172,7 @@ main {
     .block-main-six {
       height: 300px;
       position: relative;
-      background-color: #fff;
+      background-color: #cecece;
       background-image: url('../img/section-pic-five.png');
       background-repeat: no-repeat;
       background-size: contain;
@@ -190,6 +198,7 @@ main {
       background-image: url(../img/aside-pic-one.png);
       background-repeat: no-repeat;
       background-position: right;
+      background-size: contain;
       .about-project {
         width: 40%;
         position: absolute;
@@ -207,12 +216,17 @@ main {
           }
         }
         .description {
-          margin-bottom: 10%;
-          width: 149px;
-          height: 60px;
+          @media (min-width: 971px) and (max-width: 1200px) {
+            color: #fff;
+          }
         }
-        .view{
-          margin: 0 0 10% 10%;
+        .part-two {
+          a {
+            @media (min-width: 971px) and (max-width: 1200px) {
+              color: #fff;
+            }
+          }
+          margin: 10% 15% 0 0;
         }
       }
     }
@@ -221,7 +235,9 @@ main {
       height: 465px;
       background-color: #e9eae2;
       background-image: url(../img/aside-pic-two.png);
-      background-size: cover;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
       .about-project {
         width: 90%;
         position: absolute;
@@ -240,20 +256,15 @@ main {
       background-repeat: no-repeat;
       background-position: left;
       .about-project {
-        margin-top: 35px;
-        width: 35%;
         position: absolute;
-        right: 10%;
-      }
-      .description {
-        margin: 20% 0;
-      }
-      .view,
-      .like {
-        margin-left: 20px;
+        top: 10%;
+        right: 5%;
+        .part-two {
+          margin-top: 50px;
+        }
       }
     }
-    // style .head at the begining of main
+    // style for .head at the begining of main
     .head {
       height: 300px;
       ul.project-nav {
@@ -290,6 +301,10 @@ main {
       font-weight: 400;
       line-height: 14px;
       text-transform: uppercase;
+      @media (max-width: 991px) {
+        padding-top: 5%;
+        height: auto;
+      }
       .about-bold {
         font-style: italic;
         font-weight: 600;
@@ -299,6 +314,10 @@ main {
     .about-awards {
       height: 500px;
       padding-top: 19%;
+      @media (max-width: 991px) {
+        padding-top: 5%;
+        height: auto;
+      }
       h5 {
         margin: 9% 0 6% 0;
         width: 90%;
@@ -309,6 +328,9 @@ main {
         font-weight: 700;
         line-height: 18px;
         text-transform: uppercase;
+        @media (max-width: 991px){
+          width: 100%;
+        }
       }
       p {
         width: 40%;
@@ -319,6 +341,10 @@ main {
         line-height: 14px;
         text-transform: uppercase;
       }
+      .left,
+      .right {
+        width: 30%;
+      }
       .left {
         float: left;
       }
@@ -328,8 +354,7 @@ main {
       }
     }
     .stuff {
-      margin: 9% 0;
-      padding-left: 5%;
+      padding: 9% 0 0 5%;
 
       color: #333;
       font-family: "Roboto Condensed";
@@ -385,6 +410,7 @@ main {
       background-color: #d4edbf;
     }
     .last-news {
+      margin-bottom: 50px;
       padding: 16% 0;
       height: 500px;
       h3 {
@@ -405,6 +431,7 @@ main {
         line-height: 14px;
       }
       a {
+        display: block;
         float: right;
         margin-right: 5%;
         color: #fd5000;
@@ -414,8 +441,33 @@ main {
         line-height: 14px;
         text-transform: uppercase;
       }
-      img {
-        margin: 0;
+      .news-img {
+        text-align: center;
+        img {
+        }
+      }
+      @media (max-width: 991px) {
+          margin: 0;
+          padding: 5% 0;
+          height: auto;
+        h3,
+        p,
+        .news-img,
+        .read-more-link {
+          text-align: center;
+        }
+        h3 {
+          margin-top: 0;
+        }
+        img {
+          display: inline-block;
+        }
+        .read-more-link {
+          a {
+            display: inline-block;
+            float: none;
+          }
+        }
       }
     }
   }

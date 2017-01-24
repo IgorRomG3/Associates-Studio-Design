@@ -171,6 +171,11 @@ main section.projects .block-main-three .about-project {
   position: absolute;
   top: 10%;
 }
+@media (max-width: 970px) {
+  main section.projects .block-main-three .about-project {
+    left: 40%;
+  }
+}
 main section.projects .block-main-three .about-project .part-two {
   margin-top: 15%;
 }
@@ -183,6 +188,12 @@ main section.projects .block-main-four {
   background-color: #eaeaea;
   background-image: url(../img/section-pic-three.png);
   background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 1170px) {
+  main section.projects .block-main-four {
+    background-position: 20% 0;
+  }
 }
 main section.projects .block-main-four .about-project {
   width: 55%;
@@ -209,7 +220,7 @@ main section.projects .block-main-five .about-project {
 main section.projects .block-main-six {
   height: 300px;
   position: relative;
-  background-color: #fff;
+  background-color: #cecece;
   background-image: url('../img/section-pic-five.png');
   background-repeat: no-repeat;
   background-size: contain;
@@ -233,6 +244,7 @@ main aside .block-aside-one {
   background-image: url(../img/aside-pic-one.png);
   background-repeat: no-repeat;
   background-position: right;
+  background-size: contain;
 }
 main aside .block-aside-one .about-project {
   width: 40%;
@@ -251,20 +263,27 @@ main aside .block-aside-one .about-project h5 span {
   font-weight: bold;
   text-transform: uppercase;
 }
-main aside .block-aside-one .about-project .description {
-  margin-bottom: 10%;
-  width: 149px;
-  height: 60px;
+@media (min-width: 971px) and (max-width: 1200px) {
+  main aside .block-aside-one .about-project .description {
+    color: #fff;
+  }
 }
-main aside .block-aside-one .about-project .view {
-  margin: 0 0 10% 10%;
+main aside .block-aside-one .about-project .part-two {
+  margin: 10% 15% 0 0;
+}
+@media (min-width: 971px) and (max-width: 1200px) {
+  main aside .block-aside-one .about-project .part-two a {
+    color: #fff;
+  }
 }
 main aside .block-aside-two {
   position: relative;
   height: 465px;
   background-color: #e9eae2;
   background-image: url(../img/aside-pic-two.png);
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 main aside .block-aside-two .about-project {
   width: 90%;
@@ -283,17 +302,12 @@ main aside .block-aside-three {
   background-position: left;
 }
 main aside .block-aside-three .about-project {
-  margin-top: 35px;
-  width: 35%;
   position: absolute;
-  right: 10%;
+  top: 10%;
+  right: 5%;
 }
-main aside .block-aside-three .description {
-  margin: 20% 0;
-}
-main aside .block-aside-three .view,
-main aside .block-aside-three .like {
-  margin-left: 20px;
+main aside .block-aside-three .about-project .part-two {
+  margin-top: 50px;
 }
 main aside .head {
   height: 300px;
@@ -329,6 +343,12 @@ main section.studio .about-studio {
   line-height: 14px;
   text-transform: uppercase;
 }
+@media (max-width: 991px) {
+  main section.studio .about-studio {
+    padding-top: 5%;
+    height: auto;
+  }
+}
 main section.studio .about-studio .about-bold {
   font-style: italic;
   font-weight: 600;
@@ -337,6 +357,12 @@ main section.studio .about-studio .about-bold {
 main section.studio .about-awards {
   height: 500px;
   padding-top: 19%;
+}
+@media (max-width: 991px) {
+  main section.studio .about-awards {
+    padding-top: 5%;
+    height: auto;
+  }
 }
 main section.studio .about-awards h5 {
   margin: 9% 0 6% 0;
@@ -349,6 +375,11 @@ main section.studio .about-awards h5 {
   line-height: 18px;
   text-transform: uppercase;
 }
+@media (max-width: 991px) {
+  main section.studio .about-awards h5 {
+    width: 100%;
+  }
+}
 main section.studio .about-awards p {
   width: 40%;
   color: #333;
@@ -358,6 +389,10 @@ main section.studio .about-awards p {
   line-height: 14px;
   text-transform: uppercase;
 }
+main section.studio .about-awards .left,
+main section.studio .about-awards .right {
+  width: 30%;
+}
 main section.studio .about-awards .left {
   float: left;
 }
@@ -366,8 +401,7 @@ main section.studio .about-awards .right {
   float: right;
 }
 main section.studio .stuff {
-  margin: 9% 0;
-  padding-left: 5%;
+  padding: 9% 0 0 5%;
   color: #333;
   font-family: "Roboto Condensed";
   font-size: 13px;
@@ -420,6 +454,7 @@ main section.news .head {
   background-color: #d4edbf;
 }
 main section.news .last-news {
+  margin-bottom: 50px;
   padding: 16% 0;
   height: 500px;
 }
@@ -441,6 +476,7 @@ main section.news .last-news p {
   line-height: 14px;
 }
 main section.news .last-news a {
+  display: block;
   float: right;
   margin-right: 5%;
   color: #fd5000;
@@ -450,8 +486,31 @@ main section.news .last-news a {
   line-height: 14px;
   text-transform: uppercase;
 }
-main section.news .last-news img {
-  margin: 0;
+main section.news .last-news .news-img {
+  text-align: center;
+}
+@media (max-width: 991px) {
+  main section.news .last-news {
+    margin: 0;
+    padding: 5% 0;
+    height: auto;
+  }
+  main section.news .last-news h3,
+  main section.news .last-news p,
+  main section.news .last-news .news-img,
+  main section.news .last-news .read-more-link {
+    text-align: center;
+  }
+  main section.news .last-news h3 {
+    margin-top: 0;
+  }
+  main section.news .last-news img {
+    display: inline-block;
+  }
+  main section.news .last-news .read-more-link a {
+    display: inline-block;
+    float: none;
+  }
 }
 footer .footer-info {
   height: 644px;
@@ -499,4 +558,9 @@ footer .footer-info .copyright {
   font-size: 12px;
   font-weight: 400;
   line-height: 22px;
+}
+@media (min-width: 600px) and (max-width: 991px) {
+  footer .footer-info .copyright {
+    left: 30%;
+  }
 }
