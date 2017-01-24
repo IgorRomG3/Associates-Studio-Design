@@ -255,6 +255,9 @@ main {
       background-image: url(../img/aside-pic-three.png);
       background-repeat: no-repeat;
       background-position: left;
+      @media (max-width: 991px) {
+        height: 300px;
+      }
       .about-project {
         position: absolute;
         top: 10%;
@@ -317,6 +320,12 @@ main {
       @media (max-width: 991px) {
         padding-top: 5%;
         height: auto;
+        .about-pic {
+          text-align: center;
+          img {
+            display: inline-block;
+          }
+        }
       }
       h5 {
         margin: 9% 0 6% 0;

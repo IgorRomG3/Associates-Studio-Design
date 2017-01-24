@@ -301,6 +301,11 @@ main aside .block-aside-three {
   background-repeat: no-repeat;
   background-position: left;
 }
+@media (max-width: 991px) {
+  main aside .block-aside-three {
+    height: 300px;
+  }
+}
 main aside .block-aside-three .about-project {
   position: absolute;
   top: 10%;
@@ -362,6 +367,12 @@ main section.studio .about-awards {
   main section.studio .about-awards {
     padding-top: 5%;
     height: auto;
+  }
+  main section.studio .about-awards .about-pic {
+    text-align: center;
+  }
+  main section.studio .about-awards .about-pic img {
+    display: inline-block;
   }
 }
 main section.studio .about-awards h5 {
