@@ -1,10 +1,14 @@
 header {
   .block-head-one {
     height: 500px;
+    position: relative;
     background-color: #e9eae2;
     background-image: url(../img/chairs-header.png);
     background-repeat: no-repeat;
     background-size:contain;
+    .logo {
+      position: absolute;
+    }
     p {
       margin-bottom: 61px;
       color: #393d3c;
@@ -59,6 +63,12 @@ header {
           line-height: 25px;
           text-transform: uppercase;
         }
+      }
+    }
+    #main-nav-btn,
+    #main-nav {
+      @media (max-width:991px) {
+        right:25px;
       }
     }
     address {
