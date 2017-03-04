@@ -12,6 +12,15 @@ header .block-head-one {
   background-repeat: no-repeat;
   background-size: contain;
 }
+header .block-head-one .navbar-header {
+  background-color: #7acec3;
+}
+header .block-head-one .navbar {
+  opacity: 0.8;
+}
+header .block-head-one .navbar li:hover {
+  background-color: #7acec3;
+}
 header .block-head-one .logo {
   position: absolute;
 }
